@@ -51,7 +51,7 @@ end
 getgenv().Orbit = {
 	Enabled = true,
 	Speed = 0.5,
-	offSet = 10,
+	offSet = 7.5,
 	Mode = true,
 	targetPlayer = LocalPlayer,
 	CMDs = {},
