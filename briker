@@ -59,7 +59,7 @@ getgenv().Orbit = {
 	Prefix = ":",
 	LoopOrbit = false,
 	LoopOrbitTime = 1,
-	TargetParts = 5,
+	TargetParts = 7,
 	LockPlaceCFrame = nil
 }
 
@@ -116,7 +116,7 @@ local Heartbeat = game:GetService("RunService").Heartbeat
 Heartbeat:Connect(function()
 for i,v in pairs(game.Workspace.Terrain._Game.Folder:GetDescendants()) do
 if v:IsA("Part") then
-v.Velocity = Vector3.new(0,-50.1,0)
+v.Velocity = Vector3.new(0,-109.1,0)
 end
 end
 end)
