@@ -59,7 +59,7 @@ getgenv().Orbit = {
 	Prefix = ":",
 	LoopOrbit = false,
 	LoopOrbitTime = 1,
-	TargetParts = 10,
+	TargetParts = 7,
 	LockPlaceCFrame = nil
 }
 
@@ -84,7 +84,7 @@ getgenv().Orbit.CreateParts = function(numOfParts)
 	if (not isStudio) then
 		for i = 1, numOfParts do
 			-- // Create Part
-			Players:Chat(":part/1/2/5")
+			Players:Chat(":part/1/1/5")
 		end
 	else
 		for i = 1, numOfParts do
@@ -102,7 +102,7 @@ getgenv().Orbit.GetParts = function()
 	for i = 1, #PartFolder do
 		local child = PartFolder[i]
 
-		if (child:IsA("Part") and child.Size == Vector3.new(1, 2, 5) and not child.Anchored) then
+		if (child:IsA("Part") and child.Size == Vector3.new(1, 1, 5) and not child.Anchored) then
 			AllParts[#AllParts + 1] = child
 		end
 	end
@@ -116,7 +116,7 @@ local Heartbeat = game:GetService("RunService").Heartbeat
 Heartbeat:Connect(function()
 for i,v in pairs(game.Workspace.Terrain._Game.Folder:GetDescendants()) do
 if v:IsA("Part") then
-v.Velocity = Vector3.new(0,-31.1,0)
+v.Velocity = Vector3.new(0,-50.1,0)
 end
 end
 end)
